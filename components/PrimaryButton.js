@@ -27,8 +27,8 @@ const styles = StyleSheet.create({
   },
   buttonInnerContainer: {
     borderRadius: 28,
-    paddingVertical: 8,
-    paddingHorizontal: 16,
+    paddingVertical: 10,
+    paddingHorizontal: 20,
     backgroundColor: "#72063c",
   },
   buttonText: {
