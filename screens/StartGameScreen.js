@@ -36,7 +36,7 @@ const StartGameScreen = ({ onConfirmNumber }) => {
       <Title>Guess My Number 🎲</Title>
       <Card>
         <InstructionText>
-          Enter a number and let your phone discovers it!
+          Enter a number and let your phone discover it!
         </InstructionText>
         <TextInput
           style={styles.input}
