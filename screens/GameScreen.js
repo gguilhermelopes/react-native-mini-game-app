@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Alert, StyleSheet, View } from "react-native";
+import { Fontisto } from "@expo/vector-icons";
 import NumberContainer from "../components/game/NumberContainer";
 import Title from "../components/ui/Title";
 import Card from "../components/ui/Card";
@@ -58,14 +59,20 @@ const GameScreen = ({ userNumber, onGameOver }) => {
       <Title>Oponnent's Guess</Title>
       <NumberContainer>{currentGuess}</NumberContainer>
       <Card>
-        <InstructionText>Higher or lower?</InstructionText>
-        <View>
-          <PrimaryButton onPress={nextGuessHandler.bind(this, "minus")}>
-            -
-          </PrimaryButton>
-          <PrimaryButton onPress={nextGuessHandler.bind(this, "plus")}>
-            +
-          </PrimaryButton>
+        <InstructionText style={styles.instructionText}>
+          Higher or lower?
+        </InstructionText>
+        <View style={styles.buttonsContainer}>
+          <View style={styles.buttonContainer}>
+            <PrimaryButton onPress={nextGuessHandler.bind(this, "minus")}>
+              <Fontisto name="minus-a" size={24} color="white" />
+            </PrimaryButton>
+          </View>
+          <View style={styles.buttonContainer}>
+            <PrimaryButton onPress={nextGuessHandler.bind(this, "plus")}>
+              <Fontisto name="plus-a" size={24} color="white" />
+            </PrimaryButton>
+          </View>
         </View>
       </Card>
     </View>
@@ -78,5 +85,14 @@ const styles = StyleSheet.create({
   screen: {
     flex: 1,
     padding: 24,
+  },
+  instructionText: {
+    marginBottom: 12,
+  },
+  buttonsContainer: {
+    flexDirection: "row",
+  },
+  buttonContainer: {
+    flex: 1,
   },
 });
