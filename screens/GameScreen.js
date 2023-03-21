@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Alert, FlatList, StyleSheet, View, Text } from "react-native";
+import { Alert, FlatList, StyleSheet, View } from "react-native";
 import { Fontisto } from "@expo/vector-icons";
 import NumberContainer from "../components/game/NumberContainer";
 import Title from "../components/ui/Title";
@@ -108,6 +108,7 @@ const styles = StyleSheet.create({
   screen: {
     flex: 1,
     padding: 24,
+    alignItems: "center",
   },
   instructionText: {
     marginBottom: 12,
