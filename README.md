@@ -7,11 +7,11 @@
 <img src="./screenshot.png" alt="exemplo imagem" height="500px">
 </p>
 
-> Jogo feito em React Native de adivinhação onde o usuário insere um número e dá dicas ao seu celular para que seja descoberto.
+> Jogo de adivinhação, feito em React Native, onde o usuário insere um número e dá dicas ao seu celular para que seja descoberto.
 
 ### Ajustes e melhorias
 
-Projeto concluído
+Projeto concluído!
 
 - [x] Implementação da lógica e das telas do jogo
 - [x] Utilização de elementos genéricos e reutilizáveis
